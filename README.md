@@ -44,22 +44,22 @@ Github Rep: 🔗ttps://github.com/mdrafiulislam2133/portfolio-web
 
 ## 📂 Project Structure
 
-
+```bash
 portfolio-web/
 │
 ├── index.html
 │
 ├── assets/
-│ ├── css/
-│ │ └── style.css
-│ │
-│ ├── js/
-│ │ └── script.js
-│ │
-│ └── images/
+│   ├── css/
+│   │   └── style.css
+│   │
+│   ├── js/
+│   │   └── script.js
+│   │
+│   └── images/
 │
 └── README.md
-
+```
 
 
 ## 🎯 Professional Focus
