@@ -17,8 +17,8 @@ The project follows professional folder structure, responsive design standards, 
 
 ## 🌍 Live Demo
 
-🔗 https://your-live-link.com  
-(Add your GitHub Pages / Netlify / Vercel link here)
+🔗 https://mdrafiulislam2133.github.io/portfolio-web
+(ttps://github.com/mdrafiulislam2133/portfolio-web)
 
 ---
 
@@ -27,9 +27,7 @@ The project follows professional folder structure, responsive design standards, 
 - HTML5  
 - CSS3  
 - Tailwind CSS  
-- JavaScript (ES6+)  
-- WordPress  
-- Elementor  
+- JavaScript (ES6+) 
 
 ---
 
@@ -89,9 +87,9 @@ portfolio-web/
 
 ## 📞 Contact
 
-📧 Email: yourmail@gmail.com  
+📧 Email: rihankhan261r@gmail.com  
 💼 LinkedIn: https://www.linkedin.com/in/md-rafiul-islam-722b4a190/
-💻 GitHub: https://github.com/rafiulislam2133  
+💻 GitHub: https://github.com/mdrafiulislam2133  
 
 ---
 
