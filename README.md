@@ -17,8 +17,8 @@ The project follows professional folder structure, responsive design standards, 
 
 ## 🌍 Live Demo
 
-🔗 https://mdrafiulislam2133.github.io/portfolio-web
-(ttps://github.com/mdrafiulislam2133/portfolio-web)
+Protfolio: 🔗 https://mdrafiulislam2133.github.io/portfolio-web
+Github Rep: 🔗 ttps://github.com/mdrafiulislam2133/portfolio-web
 
 ---
 
