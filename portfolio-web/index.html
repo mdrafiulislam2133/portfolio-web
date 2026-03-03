@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rafiul Isalam - Web Developer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0066ff',
+                        dark: '#1a1a2e',
+                        lightGray: '#f8f9fa'
+                    },
+                    fontFamily: {
+                        sans: ['Poppins', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="font-sans text-gray-700 antialiased overflow-x-hidden">
+
+    <header class="w-full py-6 px-6 md:px-16 flex justify-between items-center fixed top-0 z-50 bg-transparent transition-all duration-300">
+        <div class="text-2xl font-bold text-gray-900 flex items-center gap-2">
+            <span class="text-primary">RK</span>
+        </div>
+        <nav class="hidden md:flex space-x-8 text-sm font-medium text-gray-600">
+            <a href="#home" class="text-gray-900 hover:text-primary transition">Home</a>
+            <a href="#about" class="hover:text-primary transition">About</a>
+            <a href="#services" class="hover:text-primary transition">Services</a>
+            <a href="#projects" class="hover:text-primary transition">Projects</a>
+        </nav>
+        <div class="hidden md:flex items-center gap-2 text-sm font-medium">
+            <i class="fa-regular fa-envelope text-primary"></i>
+            <span><a href="mailto:rihankhan261r@gmail.com">rihankhan261r@gmail.com</a></span>
+        </div>
+        <button id="mobile-menu-btn" class="md:hidden text-2xl z-50 relative"><i class="fa-solid fa-bars"></i></button>
+    </header>
+
+    <div id="mobile-menu" class="fixed inset-0 bg-white z-40 transform translate-x-full transition-transform duration-300 md:hidden pt-24 px-8 shadow-xl">
+        <nav class="flex flex-col space-y-6 text-xl font-medium text-gray-800">
+            <a href="#home" class="mobile-link text-primary border-b border-gray-100 pb-2">Home</a>
+            <a href="#about" class="mobile-link hover:text-primary transition border-b border-gray-100 pb-2">About</a>
+            <a href="#services" class="mobile-link hover:text-primary transition border-b border-gray-100 pb-2">Services</a>
+            <a href="#projects" class="mobile-link hover:text-primary transition border-b border-gray-100 pb-2">Projects</a>
+            <a href="#blog" class="mobile-link hover:text-primary transition border-b border-gray-100 pb-2">Blog</a>
+        </nav>
+        <div class="mt-12 flex items-center gap-3 text-base font-medium text-gray-600 bg-blue-50 p-4 rounded-lg">
+            <i class="fa-regular fa-envelope text-primary"></i>
+            <span>rihankhan261r@gmail.com</span>
+        </div>
+    </div>
+
+    <section id="home" class="relative pt-32 pb-20 md:pt-48 md:pb-32 px-6 md:px-16 bg-blue-50/30 overflow-hidden">
+        <div class="w-full max-w-[1536px] mx-auto flex flex-col md:flex-row items-center">
+            <div class="w-full md:w-1/2 pr-0 md:pr-12 z-10" data-aos="fade-right">
+                <h2 class="text-xl md:text-2xl font-medium text-gray-600 mb-2 flex items-center gap-2">
+                    Hello Mate <span class="text-2xl">👋</span>
+                </h2>
+                <h1 class="text-5xl rafiul md:text-6xl font-bold text-gray-900 leading-tight mb-6">
+                    I'm Rafiul Islam<br>
+                    a <span id="typing-text" class="text-primary"></span><span class="text-primary animate-pulse">|</span>
+                </h1>
+                <p class="text-gray-500 mb-8 max-w-md text-sm leading-relaxed">
+                    Hi, I'm Rafiul , Specialized in WordPress, Webflow, and Front-End Development. Turning UI/UX designs into responsive, scalable, and optimized websites.
+                </p>
+                <div class="flex flex-wrap gap-4">
+                    <a href="#projects" class="bg-primary hover:bg-blue-700 text-white px-8 py-3 rounded text-sm font-medium transition shadow-lg shadow-blue-500/30">Book a Call</a>
+                    <a href="#" class="bg-white border border-gray-200 hover:border-gray-300 text-gray-700 px-8 py-3 rounded text-sm font-medium transition shadow-sm">Download CV</a>
+                </div>
+            </div>
+            <div class="w-full md:w-1/2 mt-12 md:mt-0 relative flex justify-center z-10" data-aos="fade-left" data-aos-delay="200">
+                <div class="absolute w-80 h-80 bg-blue-100 rounded-full blur-3xl opacity-50 -z-10"></div>
+                <img src="assets/Image/rafiulislam.png" alt="MD Rafiul Islam" class="max-w-full h-auto object-cover object-bottom">
+            </div>
+        </div>
+    </section>
+    <section id="about" class="py-24 px-6 md:px-16 bg-white overflow-hidden">
+        <div class="w-full max-w-[1536px] mx-auto flex flex-col md:flex-row items-center gap-16">
+            <div class="w-full md:w-1/2 relative flex justify-center" data-aos="fade-right">
+                <div class="absolute w-64 h-64 bg-blue-50 rounded-full bottom-0 -z-10"></div>
+                <img src="assets/Image/rafiulislam2.png" alt="About Michle" class="max-w-full rounded-lg relative z-10">
+            </div>
+            <div class="w-full md:w-1/2" data-aos="fade-left">
+                <h4 class="text-primary text-xs font-bold uppercase tracking-wider mb-2">About Me</h4>
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 leading-tight">Web Designer & Front-End Developer</h2>
+                
+                  <p>Front-End Developer specializing in responsive website development using modern technologies. Experienced in WordPress, Webflow, and converting UI/UX designs into scalable, production-ready solutions.</p></br>
+                </p>
+                    <div class=""services-list>
+                        <h2><span class="dott">✔</span> Custom Website Development</h2>
+                        <h2><span>✔</span> WordPress Theme Customization</h2>
+                        <h2><span>✔</span> Webflow Development</li>
+                        <h2></h2><span>✔</span> UI/UX to Website Conversion</li>
+                        <h2><span>✔</span> API Integration & Optimization</h2>
+                    </div>
+                <div class="flex items-center gap-6">
+                    <a href="#" class="bg-primary hover:bg-blue-700 text-white px-6 py-2.5 rounded text-sm font-medium transition shadow-lg shadow-blue-500/30">Download CV</a>
+                    <div class="flex items-center gap-4 text-gray-400 text-sm">
+                        <span class="hidden sm:inline">Let’s Work Together</span>
+                        <div class="w-8 h-[1px] bg-gray-300 hidden sm:block"></div>
+                        <a href="https://www.facebook.com/StreetDawahh/" class="hover:text-primary transition"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" class="hover:text-primary transition"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#" class="hover:text-primary transition"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+     
+    <section id="services" class="py-20 px-6 md:px-16 rafiul-islam bg-lightGray overflow-hidden">
+        <div class="w-full max-w-[1536px] mx-auto flex flex-col md:flex-row gap-16">
+            <div class="w-full md:w-5/12" data-aos="fade-right">
+                <h4 class="text-primary text-xs font-bold uppercase tracking-wider mb-2">Technical Skills</h4>
+                <h2 class="text-3xl rk-title font-bold text-gray-900 mb-6 leading-tight">Core Technical Expertise</h2>
+                <p class="text-gray-500 text-sm leading-relaxed mb-8">
+                    Strong foundation in modern web development, focused on building responsive, scalable, and performance-optimized websites.
+                </p>
+                <div class="imagehefo">
+                   <img src="assets/Image/hero-image.png" alt="">
+                </div>
+                <a href="#projects" class="bg-primary hover:bg-blue-700 text-white px-6 py-2.5 rounded text-sm font-medium transition shadow-lg shadow-blue-500/30">View My Projects</a>
+            </div>
+<div class="w-full md:w-7/12 flex flex-col justify-center space-y-8" data-aos="fade-left" data-aos-delay="200">
+                
+                <div>
+                    <div class="flex justify-between items-end mb-3">
+                        <span class="text-base font-bold text-gray-900 tracking-wide">Front-End Development</span>
+                        <p></p>
+                    </div>
+                    <div class="bg-rafiul">
+                        <div class="bg-rafiul"> HTML5, CSS3, Tailwind CSS, JavaScript (ES6+)</div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="flex justify-between items-end mb-3">
+                        <span class="text-base font-bold text-gray-900 tracking-wide">Frameworks & Libraries</span>
+                        <p></p>
+                    </div>
+                    <div class="bg-rafiul">
+                        <div class="bg-rafiul">React, Redux Toolkit</div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="flex justify-between items-end mb-3">
+                        <span class="text-base font-bold text-gray-900 tracking-wide">CMS & Platforms</span>
+                        <p></p>
+                    </div>
+                    <div class="bg-rafiul">
+                        <div class="bg-rafiul">WordPress, Webflow, Elementor</div>
+                    </div>
+                </div>
+                
+                <div>
+                    <div class="flex justify-between items-end mb-3">
+                        <span class="text-base font-bold text-gray-900 tracking-wide">Additional Skills</span>
+                        <p></p>
+                    </div>
+                    <div class="bg-rafiul">
+                        <div class="bg-rafiul">Theme Customization, API Integration, Responsive Design, Cross-Browser Compatibility</div>
+                    </div>
+                </div>
+
+            </div>
+            <!--Bar end-->
+            <div>
+            
+            <div class="w-full bg-gray-200 rounded-full h-1.5"><div class="bg-primary h-1.5 rounded-full" style="width: 89%"></div></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="resume" class="py-24 px-6 md:px-16 bg-white overflow-hidden">
+        <div class="w-full max-w-[1536px] mx-auto">
+            
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h4 class="text-primary text-xs font-bold uppercase tracking-wider mb-2">My Journey</h4>
+                <h2 class="text-3xl font-bold text-gray-900">Education & Experience</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
+                <div data-aos="fade-right">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-8 flex items-center gap-4">
+                        <span class="w-12 h-12 rounded-xl bg-lightGray shadow-sm flex items-center justify-center text-primary text-xl">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                        </span>
+                        Academic Background
+                    </h3>
+                    
+                    <div class="space-y-6">
+                        <div class="bg-lightGray p-8 rounded-2xl shadow-sm hover:shadow-md transition-all duration-300 border-l-4 border-transparent hover:border-primary group">
+                            <div class="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-2 mb-4">
+                                <div>
+                                    <h4 class="text-xl font-bold text-gray-900 group-hover:text-primary transition-colors">Ranipukur High School & College</h4>
+                                    <h5 class="text-sm font-semibold text-gray-500 mt-1">Intermediate of Arts</h5>
+                                </div>
+                                <span class="inline-block px-3 py-1 bg-white text-primary text-xs font-bold rounded-md whitespace-nowrap shadow-sm">2019 - 2020</span>
+                            </div>
+                            <p class="text-gray-500 text-sm leading-relaxed">Completed my Higher Secondary education with a focus on Arts and Humanities. Developed strong communication, critical thinking, and analytical skills while actively participating in various extracurricular programs.</p>
+                        </div>
+
+                        <div class="bg-lightGray p-8 rounded-2xl shadow-sm hover:shadow-md transition-all duration-300 border-l-4 border-transparent hover:border-primary group">
+                            <div class="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-2 mb-4">
+                                <div>
+                                    <h4 class="text-xl font-bold text-gray-900 group-hover:text-primary transition-colors">Sadullapur Bahrul Dhakil Madrashah</h4>
+                                    <h5 class="text-sm font-semibold text-gray-500 mt-1">SSC (Scrience)</h5>
+                                </div>
+                                <span class="inline-block px-3 py-1 bg-white text-primary text-xs font-bold rounded-md whitespace-nowrap shadow-sm">2017 - 2018</span>
+                            </div>
+                            <p class="text-gray-500 text-sm leading-relaxed">Completed my Secondary School Certificate majoring in Science. Built a strong foundational understanding of mathematics and core sciences, which sparked my analytical and problem-solving mindset.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div data-aos="fade-left" data-aos-delay="100">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-8 flex items-center gap-4">
+                        <span class="w-12 h-12 rounded-xl bg-lightGray shadow-sm flex items-center justify-center text-primary text-xl">
+                            <i class="fa-solid fa-briefcase"></i>
+                        </span>
+                        Work Experience
+                    </h3>
+                    
+                    <div class="space-y-6">
+                        <div class="bg-lightGray p-8 rounded-2xl shadow-sm hover:shadow-md transition-all duration-300 border-l-4 border-transparent hover:border-primary group">
+                            <div class="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-2 mb-4">
+                                <div>
+                                    <h4 class="text-xl font-bold text-gray-900 group-hover:text-primary transition-colors">Soft-Tech IT</h4>
+                                    <h5 class="text-sm font-semibold text-gray-500 mt-1">Web Development Intern</h5>
+                                </div>
+                                <span class="inline-block px-3 py-1 bg-white text-primary text-xs font-bold rounded-md whitespace-nowrap shadow-sm">2020 - 2021</span>
+                            </div>
+                            <p class="text-gray-500 text-sm leading-relaxed">Assisted senior developers in building and maintaining responsive websites. Gained hands-on experience with modern web technologies and frameworks while participating in daily stand-ups and bug fixing.</p>
+                        </div>
+
+                        <div class="bg-lightGray p-8 rounded-2xl shadow-sm hover:shadow-md transition-all duration-300 border-l-4 border-transparent hover:border-primary group">
+                            <div class="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-2 mb-4">
+                                <div>
+                                    <h4 class="text-xl font-bold text-gray-900 group-hover:text-primary transition-colors">Website Learners</h4>
+                                    <h5 class="text-sm font-semibold text-gray-500 mt-1">UI/UX Designer</h5>
+                                </div>
+                                <span class="inline-block px-3 py-1 bg-white text-primary text-xs font-bold rounded-md whitespace-nowrap shadow-sm">2019 - 2021</span>
+                            </div>
+                            <p class="text-gray-500 text-sm leading-relaxed">Designed user-centric interfaces for web and mobile applications. Created wireframes, prototypes, and high-fidelity mockups, ensuring seamless user experiences and collaborating closely with the development team.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="py-32 bg-lightGray text-center">
+        <div class="w-[90%] mx-auto">
+            <h4 class="text-primary text-sm font-bold uppercase tracking-wider mb-4" data-aos="fade-up">Portfolio</h4>
+            <h2 class="text-5xl font-bold text-gray-900 mb-16" data-aos="fade-up" data-aos-delay="100">Some Of My Recent Works</h2>
+
+            <div class="flex flex-wrap justify-center gap-8 mb-16 text-lg font-medium" data-aos="fade-up" data-aos-delay="200">
+                <button onclick="filterProjects('all', this)" class="filter-btn text-primary border-b-2 border-primary pb-1 transition-all duration-300">All</button>
+                <button onclick="filterProjects('web-dev', this)" class="filter-btn text-gray-500 border-b-2 border-transparent hover:text-primary pb-1 transition-all duration-300">Responsive Web Design</button>
+                <button onclick="filterProjects('web-design', this)" class="filter-btn text-gray-500 border-b-2 border-transparent hover:text-primary pb-1 transition-all duration-300">Web Design</button>
+                <button onclick="filterProjects('ui-ux', this)" class="filter-btn text-gray-500 border-b-2 border-transparent hover:text-primary pb-1 transition-all duration-300">UI/UX Design</button>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+                
+                <div data-category="web-dev" class="project-card relative group overflow-hidden rounded-2xl cursor-pointer bg-white aspect-[4/3] shadow-lg">
+                    <a href="https://rihans-cool-site.webflow.io/"> <img src="assets/Image/fashion.PNG" alt="Responsive Web Design" class="w-full h-full object-cover group-hover:scale-110 transition duration-500"></a>
+                    <div class="absolute inset-0 bg-primary/90 flex flex-col justify-center items-center p-6 opacity-0 group-hover:opacity-100 transition duration-500 text-center">
+                        <a href="https://rihans-cool-site.webflow.io/"><h3 class="text-white text-2xl font-bold mb-2">WebFLow Web Design</h3></a>
+                        <p class="text-blue-100 font-medium">Web Design</p>
+                    </div>
+                </div>
+
+                <div data-category="ui-ux" class="project-card relative group overflow-hidden rounded-2xl cursor-pointer bg-white aspect-[4/3] shadow-lg">
+                    <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?auto=format&fit=crop&w=800&q=80" alt="UI/UX Design" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    <div class="absolute inset-0 bg-primary/90 flex flex-col justify-center items-center p-6 opacity-0 group-hover:opacity-100 transition duration-500 text-center">
+                        <h3 class="text-white text-2xl font-bold mb-2">Finance Dashboard</h3>
+                        <p class="text-blue-100 font-medium">UI/UX Design</p>
+                    </div>
+                </div>
+
+                <div data-category="web-design" class="project-card relative group overflow-hidden rounded-2xl cursor-pointer bg-white aspect-[4/3] shadow-lg">
+                    <img src="https://images.unsplash.com/photo-1522542550221-31fd19575a2d?auto=format&fit=crop&w=800&q=80" alt="Web Design" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    <div class="absolute inset-0 bg-primary/90 flex flex-col justify-center items-center p-6 opacity-0 group-hover:opacity-100 transition duration-500 text-center">
+                        <h3 class="text-white text-2xl font-bold mb-2">Corporate Website</h3>
+                        <p class="text-blue-100 font-medium">Web Design</p>
+                    </div>
+                </div>
+
+                <div data-category="web-dev" class="project-card relative group overflow-hidden rounded-2xl cursor-pointer bg-white aspect-[4/3] shadow-lg">
+                    <a href="https://rihankhan12.github.io/card/"><img src="assets/Image/shoppingcar.png" alt="Web Development" class="w-full h-full object-cover group-hover:scale-110 transition duration-500"></a>
+                    <div class="absolute inset-0 bg-primary/90 flex flex-col justify-center items-center p-6 opacity-0 group-hover:opacity-100 transition duration-500 text-center">
+                        <h3 class="text-white text-2xl font-bold mb-2">Shopping Cart</h3>
+                        <p class="text-blue-100 font-medium">Web Development</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function filterProjects(category, clickedBtn) {
+            // 1. Reset all buttons to gray
+            let allBtns = document.querySelectorAll('.filter-btn');
+            allBtns.forEach(btn => {
+                btn.className = 'filter-btn text-gray-500 border-b-2 border-transparent hover:text-primary pb-1 transition-all duration-300';
+            });
+            
+            // 2. Make the clicked button Blue
+            clickedBtn.className = 'filter-btn text-primary border-b-2 border-primary pb-1 transition-all duration-300';
+
+            // 3. Hide or Show the cards and force AOS to let go of them
+            let cards = document.querySelectorAll('.project-card');
+            cards.forEach(card => {
+                let cardCategory = card.getAttribute('data-category');
+                
+                if (category === 'all' || category === cardCategory) {
+                    card.style.display = 'block';
+                    card.style.opacity = '1';       // Overrides animation lock
+                    card.style.transform = 'none';  // Overrides animation lock
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+    </script>
+    <footer class="bg-[#1a1f2c] pt-32 pb-8 text-white">
+        <div class="w-[90%] mx-auto">
+            
+            <div class="flex flex-col items-center mb-24" data-aos="fade-up">
+                <span class="text-gray-400 text-xs font-bold uppercase tracking-[0.2em] mb-4">Contact Me</span>
+                <h2 class="text-4xl md:text-6xl font-bold text-white mb-10">Let’s Work Together!</h2>
+                
+                <a href="mailto:hi@example.com" class="bg-primary hover:bg-blue-500 text-white px-8 py-3.5 rounded-md font-semibold flex items-center gap-2 transition-all duration-300 shadow-[0_0_20px_rgba(0,102,255,0.4)] hover:shadow-[0_0_30px_rgba(0,102,255,0.7)] hover:-translate-y-1">
+                    Get A Quote <i class="fa-solid fa-arrow-right text-sm"></i>
+                </a>
+            </div>
+
+            <div class="flex flex-col md:flex-row justify-between items-center border-t border-gray-700/60 pt-8 text-sm text-gray-400">
+                <div class="flex gap-6 mb-4 md:mb-0">
+                    <a href="https://www.facebook.com/StreetDawahh" class="hover:text-white transition duration-300"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="hover:text-white transition duration-300"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://www.linkedin.com/in/md-rafiul-islam-722b4a190/" class="hover:text-white transition duration-300"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#" class="hover:text-white transition duration-300"><i class="fa-solid fa-globe"></i></a>
+                </div>
+                <div>&copy; Copyright &copy; 2026 by Rafiul Islam | All Rights Reserved.</div>
+            </div>
+            
+        </div>
+    </footer>
+    <div class="cursor-dot" data-cursor-dot></div>
+    <div class="cursor-outline" data-cursor-outline></div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
+
+
+
+
+
+
